@@ -1,6 +1,3 @@
-require "date"
-require_relative "helpers"
-
 module Rclam
   module ClamAV
 
