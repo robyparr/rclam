@@ -1,28 +1,19 @@
 # Rclam
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rclam`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a small command-line utility that wraps around clamscan that 
+makes it easier to use for systems maintenance.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+`$ gem install rclam`
 
-```ruby
-gem 'rclam'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install rclam
+*Note that this is not meant to be used as a library, but a command-line utility.*
 
 ## Usage
 
-TODO: Write usage instructions here
+To run a scan of your entire computer:
+
+`rclam scan /`
 
 ## Development
 
@@ -32,7 +23,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rclam.
+Bug reports and pull requests are welcome on GitHub at https://github.com/robyparr/rclam.
 
 ## License
 
