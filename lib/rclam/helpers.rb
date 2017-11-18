@@ -14,10 +14,7 @@ module Rclam
 
     def self.last_signatures_update
       version_header = %x{freshclam --version}
-      regex = FRESHCLAM_REGEX.match(version_header)
-      
-      return nil if regex.nil?
-      DateTime.parse regex.captures.first
+      DateTime.parse self.first_regex_capture(FRESHCLAM_REGEX, version_header)
     end
 
     def self.date_within_a_day?(date)
