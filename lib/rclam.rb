@@ -12,9 +12,10 @@ module Rclam
     def scan(location = '/')
       not_installed         unless Rclam::ClamAV.installed?
       Rclam::ClamAV.update  unless Rclam::ClamAV.up_to_date?
-      
+
       puts "Scanning #{File.expand_path(location)}..."
-      puts Rclam::ClamAV.scan location
+      result = Rclam::ClamAV.scan location
+      puts Rclam::Helpers.clamscan_report(result)
     end
 
     private
