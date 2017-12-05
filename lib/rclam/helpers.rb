@@ -1,6 +1,6 @@
 module Rclam
   module Helpers
-    FRESHCLAM_REGEX = /^.+\/(\D{3} \D{3} \d{2} \d{2}:\d{2}:\d{2} \d{4})$/
+    FRESHCLAM_REGEX = /^.+\/(\D{3}\W+\D{3}\W+\d{1,2}\W+\d{2}:\d{1,2}:\d{1,2}\W+\d{4})$/
     INFECTED_FILES_REGEX = /^Infected files: (\d+)$/
     SCANNED_FILES_REGEX = /^Scanned files: (\d+)$/
     TIME_REGEX = /^Time: .+\((\d \w{1} \d \w{1})\)$/
